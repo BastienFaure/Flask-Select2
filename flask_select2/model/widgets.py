@@ -4,7 +4,8 @@ __copyright = 'Copyright 2017, Paul Cunningham'
 
 from flask import url_for, json
 from flask_select2._compat import as_unicode
-from wtforms.widgets import HTMLString, html_params
+from wtforms.widgets import html_params
+from markupsafe import Markup as HTMLString
 
 
 class AjaxSelect2Widget(object):
